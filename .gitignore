@@ -1,0 +1,47 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Build outputs
+theme/react-seminar/dist/
+seminar/assets/
+seminar/index.html
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Database
+*.sql
+*.sqlite
+*.db
+
+# Uploads
+data/
+files/
+
+# Cache
+.cache/
+temp/
+tmp/
