@@ -1,0 +1,13 @@
+.csel {width:200px !important; float:left; margin-right:10px;}
+.ttl {border-right:1px solid #d6dce7 !important;}
+.td_body {padding-left:30px !important;}
+/*.btn {width:115px; height:40px; line-height:35px; color:#fff; font-size:14px; border:none; border-radius:5px; margin-right:10px; font-weight:400; cursor:pointer;}*/
+.ipt {width:100%; background:#fff; border:1px solid #ddd; font-size:16px; color:#666; padding:0 0 0 20px; height:48px;}
+.filebox {display:inline-block; float:left;}
+.filebox .upload-name.style2 {width:425px; background:#fff; border:1px solid #ddd; margin-right:5px;}
+.filebox.bs3-primary label {line-height:35px; cursor: pointer;}
+.filebox input[type="file"] {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;}
+.lstw {width: 23.5% !important; display:inline-table; margin:0 0.5%;}
+.cateimg {width: 30%;}
+.ttlbgc {margin-bottom:10px; font-size:14px;}
+.adm_title {line-height:40px; font-size:1.2em; border-bottom:1px solid #ddd; background:#fff; text-align:left;}

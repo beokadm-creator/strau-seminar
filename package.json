@@ -1,0 +1,21 @@
+{
+  "name": "gnuboard-modern-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "nanoid": "^5.1.6",
+    "postcss": "^8.4.31",
+    "sass": "^1.97.3",
+    "vite": "^5.4.21"
+  },
+  "dependencies": {
+    "swiper": "^12.1.0"
+  }
+}

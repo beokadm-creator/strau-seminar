@@ -1,0 +1,42 @@
+.csel {width:200px !important; float:left; margin-right:10px; padding:10px; height:auto !important;}
+.ttl {border-right:1px solid #d6dce7 !important;}
+.td_body {padding-left:30px !important;}
+.btn {cursor:pointer;}
+.ipt {width:100%;}
+
+.filebox {display:table !important; margin-bottom:5px;}
+.filebox .upload-name.style2 {width:425px; background:#fff; border:1px solid #ddd; margin-right:5px; padding:12px 0 12px 20px;}
+.filebox.bs3-primary label {line-height:35px; cursor: pointer;}
+.filebox input[type="file"] {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;}
+.lstw {width: 23.5% !important; display:inline-table; margin:0 0.5%;}
+.cateimg {width: 30%;}
+.ttlbgc {background-color:#f0f5fb; font-size:14px; padding:10px 15px 0;}
+.chk_box {width:18px; margin:0 auto;}
+.chk_box input[type="checkbox"] + label {position:relative; color:#999; font-size:14px;}
+.chk_box input[type="checkbox"] + label span {width:18px; height:18px; display:block; background:transparent; border:3px solid #ccc; position:relative;}
+.chk_box input[type="checkbox"]:checked + label span {border:3px solid #f73e3e;}
+.chk_box input[type="checkbox"]:checked + label span:after {
+	content: '';
+	width: 18px;
+	height: 17px;
+	background: url(/img/adm/chk_icon.png) no-repeat center;
+	position: absolute;
+	right: -7px;
+	top: -6px;
+}
+
+
+.state_btn {width:60px; height:35px; border:none; border-radius:5px; margin-right:5px; color:#fff; cursor:pointer;}
+.btn_blue {background:#00a5df;}
+.btn_red {background:#f73e3e;}
+.btn_confirm {width:100%; text-align:center; margin-top:10px;}
+
+.plusFile, .minusFile {font-size:30px; display:inline-block; vertical-align:middle; margin-left:10px; margin-top:10px; cursor:pointer;}
+
+.sImg img {height:50px;}
+.thumbImg {display:inline-block; margin-left:10px;}
+.thumbImg img {height: 60px;}
+
+.btn_left {float: left; margin-bottom: 10px;}
+.btn_right {float: right;}
+.adm_title {line-height:40px; font-size:1.2em; border-bottom:1px solid #ddd; background:#fff; text-align:left;}

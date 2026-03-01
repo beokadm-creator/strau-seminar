@@ -1,0 +1,41 @@
+#container_title{display:none;}
+/*.sub_visual{background:url('/img/sub/sub_top.png') no-repeat;padding:250px 0; background-position:center;background-size:cover;margin-top:-90px;}*/
+.sub_visual{background:url('/img/main/mainBanner03.jpg') no-repeat;padding:250px 0; background-position:center;background-size:cover;margin-top:-90px;}
+
+.sub_visual .inner_visual{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); display: flex; flex-direction: column; align-items: center; width:100%;}
+.sub_visual .inner_visual h2{font-size: 80px; font-family: 'Pretendard';}
+.sub_visual ul.clear li{float:left;}
+.sub_visual ul.clear li:after{content:"-"; display:inline-block; color:#fff; margin:0 5px;}
+.sub_visual ul.clear li:last-child:after{display:none;}
+.sub_visual ul.clear li a{color:#fff; font-size:15px;font-style: normal; font-weight: 400; letter-spacing:-0.5px;}
+
+/* 서브페이지 메뉴 */
+.mobile_sub_menu{display:none;}
+.sub_page_menu.app_menu .inner_container ul.col3 li{width:16.6%;margin:0; padding: 0; border: 0;}
+.sub_page_menu .inner_container ul.col3{display:flex;gap:2px;}
+.sub_page_menu .inner_container ul.col3 li a{display:block;width:100%;height:100%; background:#fff; font-size:20px; letter-spacing:-0.5px;text-align:center; padding:30px 0; line-height:1; font-style: normal; font-weight: 700;}
+.sub_page_menu .inner_container ul.col3 li a.active{background:#ef3f3e; color:#fff;position:relative;}
+.sub_page_menu .inner_container ul.col3 li a.active::after{content:'';width:13px;height:13px;background:#ef3f3e;display:block;transform: rotate(45deg);position:absolute;bottom: -7px;
+    left: 50%; transform: translateX(-50%) rotate(45deg);}
+.sub_page_menu{margin-top:-80px;}
+
+@media screen and (min-width: 2300px){
+	.sub_visual{padding:16.6087vw 0;}
+	.sub_visual .inner_visual h2{font-size:102px;}
+}
+
+@media (max-width: 1490px){
+.sub_page_menu{margin-top: -81px;}
+.sub_page_menu .inner_container{max-width:87.2483vw;}
+.sub_page_menu .inner_container ul.col3 li a{font-size:18px;padding: 32px 0;}
+}
+
+@media screen and (max-width: 980px){
+	.sub_visual{padding:46.5918vw 0;background-position: center; background-size: inherit;}
+	.sub_visual .inner_visual{transform: translate(-50%,20%);}
+	.sub_visual .inner_visual h2{font-size: 8.1633vw;}
+	.sub_page_menu{margin-top:-8.2653vw}
+	.sub_page_menu .inner_container{display:none;}
+	.mobile_sub_menu{display:block;}
+	.mobile_sub_menu select.mobile_sub_menu_sel{width:100%; height:10vw; background:#ef3f3e; color:#fff; font-size:3.8vw; padding-left:2vw;background: #ef3f3e url('/img/icon_arr.png') no-repeat 98% center;}
+}

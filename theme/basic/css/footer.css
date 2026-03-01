@@ -1,0 +1,56 @@
+footer {background-color: #363a3a; color: #fff; padding: 30px 0 20px;}
+footer p, footer a {color: #aaa; line-height: 1.25; margin-bottom: 4px; word-break: keep-all; white-space: wrap;}
+footer p:first-child {margin-bottom: 10px;}
+footer p:first-child:hover {text-decoration: underline;}
+footer .fWrap {padding: 0 60px; justify-content: space-between;}
+footer .fWrap .f_logo {width: 200px;}
+footer .fWrap .info {width: calc(100% - 350px); max-width: 350px; position: relative;}
+footer .fWrap .info .dfbox {flex-wrap: wrap; row-gap: 10px;}
+footer .fWrap .info .dfbox p {position: relative; padding: 0 10px;}
+footer .copyright {margin-top: 30px; color: #eee; text-align: center;}
+footer .foot_company {text-align: center; border-top: 1px solid; padding-top: 20px;margin-top: 10px;}/* kjh241017 kcp 본인인증을 위해 추가 */
+.comm_snsWrap {position: fixed; top: 40%; right: 90px; transform: translateY(-50%); z-index: 99;}
+.comm_snsWrap ul {display: flex; flex-direction: column; gap: 15px;}
+.comm_snsWrap a {display: block; height: 100%;}
+/* .comm_snsWrap ul li:hover path {fill: #2b7762 !important;} */
+.comm_snsWrap ul li:nth-child(1):hover path {fill: #3b5998 !important;}
+.comm_snsWrap ul li:nth-child(2):hover path {fill: #F7E600 !important;}
+.comm_snsWrap ul li:nth-child(3):hover path {fill: #b2071d !important;}
+.comm_snsWrap ul li:nth-child(4):hover path {fill: #2b7762 !important;}
+
+
+@media (max-width: 1800px) {
+	.comm_snsWrap {right: 4vw;}
+}
+
+@media (max-width: 1600px) {
+	.comm_snsWrap {right: 4vw;}
+}
+
+@media (max-width: 1400px) {
+	.comm_snsWrap {right: 4vw;}
+}
+
+@media (max-width: 1200px) {
+	.comm_snsWrap {right: 6vw;}
+}
+@media (max-width: 1024px) {
+	footer .fWrap .f_logo img {width: 220px;}
+	footer .fWrap .info {width: calc(100% - 280px);}
+	.comm_snsWrap {right: 20px;}
+}
+@media (max-width: 767px) {
+	footer .fWrap {flex-direction: column; align-items: start; gap: 30px; padding: 0 30px;}
+	footer .fWrap .info {width: 100%; max-width: none;}
+	footer .fWrap .f_logo {margin-bottom: 0;}
+	footer .fWrap .f_logo img {width: 180px;}
+}
+
+@media (max-width: 480px) {
+	footer .fWrap {padding: 0 10px; gap: 20px;}
+	footer .fWrap .info .copyright {margin-top: 25px;}
+	footer .fWrap .f_logo img {width: 140px;}
+	.comm_snsWrap {right: 10px; top:60%}
+	.comm_snsWrap ul {gap: 7px;}
+	.comm_snsWrap ul li svg {width: 30px;}
+}

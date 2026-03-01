@@ -1,0 +1,603 @@
+/* 새로운 회원가입 폼 스타일 */
+.register-new {
+    background: #f8f9fa;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+.register-new .inner_container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+/* 헤더 스타일 */
+.register-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo_title {
+    margin-bottom: 30px;
+}
+
+.logo_title .imgbox img {
+    max-width: 200px;
+    height: auto;
+}
+
+.logo_title h2 {
+    color: #333;
+    margin-top: 15px;
+}
+
+/* 진행 단계 표시기 */
+.progress-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    position: relative;
+}
+
+.progress-indicator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    right: 20%;
+    height: 2px;
+    background: #e0e0e0;
+    z-index: 1;
+}
+
+.progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin: 0 40px;
+    cursor: pointer;
+}
+
+.progress-step .step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.progress-step.active .step-number {
+    background: #007bff;
+    color: white;
+}
+
+.progress-step.completed .step-number {
+    background: #28a745;
+    color: white;
+}
+
+.progress-step .step-label {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+.progress-step.active .step-label {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* 폼 스타일 */
+.register-content {
+    margin-bottom: 40px;
+}
+
+.step-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form-section {
+    background: #fafafa;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.form-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
+.form-item:last-child {
+    margin-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-group .required {
+    color: #dc3545;
+}
+
+/* 입력 필드 스타일 */
+.frm_input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.frm_input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.frm_input.full_input {
+    width: 100%;
+}
+
+/* 입력 그룹 */
+.input-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-group .frm_input {
+    flex: 1;
+}
+
+.input-group .btn_frmline {
+    white-space: nowrap;
+    padding: 12px 20px;
+    min-width: 100px;
+}
+
+/* 버튼 스타일 */
+.btn_frmline {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn_frmline:hover {
+    background: #0056b3;
+}
+
+.btn_frmline:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+}
+
+/* 라디오 버튼 그룹 */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-item input[type="radio"] {
+    margin-right: 8px;
+}
+
+.radio-text {
+    font-weight: normal;
+    color: #555;
+}
+
+/* 체크박스 그룹 */
+.checkbox-group .checkbox-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.checkbox-item:hover {
+    background: #f0f0f0;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.checkbox-text {
+    font-weight: normal;
+    color: #555;
+}
+
+/* 추천인 검색 */
+.referral-info {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.referral-desc {
+    margin: 0;
+    color: #1565c0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.referral-search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.referral-results {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.referral-results-header {
+    background: #f8f9fa;
+    padding: 12px 15px;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+.referral-results-list {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.referral-result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.referral-result-item:hover {
+    background: #f8f9fa;
+}
+
+.referral-result-item:last-child {
+    border-bottom: none;
+}
+
+.referral-info {
+    flex: 1;
+}
+
+.referral-name {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.referral-clinic {
+    display: block;
+    color: #666;
+    font-size: 13px;
+}
+
+.btn_select {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.btn_select:hover {
+    background: #218838;
+}
+
+.no-results {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+/* 선택된 추천인 */
+.selected-referral {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 6px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selected-referral-info {
+    flex: 1;
+}
+
+.selected-label {
+    font-weight: 600;
+    color: #155724;
+    margin-right: 10px;
+}
+
+.selected-name {
+    font-weight: 600;
+    color: #155724;
+    margin-right: 5px;
+}
+
+.selected-clinic {
+    color: #155724;
+    font-size: 13px;
+}
+
+.btn_remove {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.btn_remove:hover {
+    background: #c82333;
+}
+
+/* 네비게이션 버튼 */
+.register-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.btn_prev, .btn_next, .btn_submit {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.btn_prev {
+    background: #6c757d;
+    color: white;
+}
+
+.btn_prev:hover {
+    background: #5a6268;
+}
+
+.btn_next {
+    background: #007bff;
+    color: white;
+    margin-left: auto;
+}
+
+.btn_next:hover {
+    background: #0056b3;
+}
+
+.btn_submit {
+    background: #28a745;
+    color: white;
+    margin-left: auto;
+}
+
+.btn_submit:hover {
+    background: #218838;
+}
+
+/* 요약 정보 */
+.register-summary {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    margin-top: 20px;
+}
+
+.register-summary h4 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.summary-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.summary-item:last-child {
+    border-bottom: none;
+}
+
+.summary-label {
+    font-weight: 600;
+    color: #555;
+    min-width: 80px;
+}
+
+.summary-value {
+    color: #333;
+    font-weight: 500;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .register-new .inner_container {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .progress-indicator {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .progress-indicator::before {
+        display: none;
+    }
+    
+    .progress-step {
+        margin: 0;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .checkbox-group .checkbox-items {
+        grid-template-columns: 1fr;
+    }
+    
+    .input-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .referral-search-container {
+        flex-direction: column;
+    }
+    
+    .referral-result-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    
+    .register-navigation {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn_prev, .btn_next, .btn_submit {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .selected-referral {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+}
+
+/* 애니메이션 */
+.register-step {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 유효성 검사 스타일 */
+.frm_input.error {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* 성공 메시지 */
+.success-message {
+    color: #28a745;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
