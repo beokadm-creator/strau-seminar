@@ -41,11 +41,13 @@ jobs:
           echo "=== Assets ==="
           ls -la dist/assets/
       
-      - name: Deploy to FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      - name: Deploy to SFTP
+        uses: BurningFat/ftp-deploy@main
         with:
           server: ${{ secrets.FTP_SERVER }}
+          port: ${{ secrets.FTP_PORT }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: theme/react-seminar/dist/
-          server-dir: /seminar/
+          local_dir: theme/react-seminar/dist/
+          server_dir: /seminar/
+          sftp: true
